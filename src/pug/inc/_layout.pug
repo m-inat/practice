@@ -1,0 +1,37 @@
+
+doctype
+html
+  head
+    meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+    title coding template
+    //- meta
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width")
+    meta(name="format-detection", content="telephone=no")
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+
+    //- ogp
+    meta(property="og:title", content="")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="")
+    meta(property="og:description", content="")
+    meta(property="og:image", content="")
+
+    meta(property="twitter:title", content="")
+    meta(property="twitter:url", content="")
+    meta(property="twitter:card", content="summary")
+    meta(property="twitter:site", content="")
+    meta(property="twitter:description", content="")
+    meta(property="twitter:image", content="")
+
+    //- stylesheet
+    link(rel="stylesheet", href="css/style.css", type="text/css")
+
+  body
+    .l-container
+      include /inc/_header
+      .l-content
+        .l-main: .l-main_inner
+          block content
+      include /inc/_footer
